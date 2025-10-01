@@ -1,0 +1,5 @@
+# Ignora saídas de compilação e arquivos gerados localmente
+ **/bin
+ **/obj
+ .vs
+ .vscode

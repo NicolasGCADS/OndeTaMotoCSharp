@@ -1,0 +1,364 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoData\\OndeTaMotoData.csproj": {}
+  },
+  "projects": {
+    "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj",
+        "projectName": "OndeTaMotoBusiness",
+        "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj",
+        "packagesPath": "C:\\Users\\nguin\\.nuget\\packages\\",
+        "outputPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nguin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
+                "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoData\\OndeTaMotoData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoData\\OndeTaMotoData.csproj",
+        "projectName": "OndeTaMotoData",
+        "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoData\\OndeTaMotoData.csproj",
+        "packagesPath": "C:\\Users\\nguin\\.nuget\\packages\\",
+        "outputPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoData\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nguin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj": {
+                "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj"
+              },
+              "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
+                "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj"
+              },
+              "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMoto\\OndeTaMotoApi.csproj": {
+                "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMoto\\OndeTaMotoApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj",
+        "projectName": "OndeTaMotoModel",
+        "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj",
+        "packagesPath": "C:\\Users\\nguin\\.nuget\\packages\\",
+        "outputPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nguin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMoto\\OndeTaMotoApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMoto\\OndeTaMotoApi.csproj",
+        "projectName": "OndeTaMotoApi",
+        "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMoto\\OndeTaMotoApi.csproj",
+        "packagesPath": "C:\\Users\\nguin\\.nuget\\packages\\",
+        "outputPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMoto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nguin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj": {
+                "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoBusiness\\OndeTaMotoBusiness.csproj"
+              },
+              "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
+                "projectPath": "D:\\Fiap\\Projeto\\2TDSPX\\Sprint1.2\\.Net\\Challenge-sprint-1-2-.Net\\OndeTaMotoProject\\OndeTaMotoModel\\OndeTaMotoModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.80, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
