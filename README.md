@@ -22,6 +22,29 @@ Mais do que um controle de motos, entregamos uma nova forma de gerir a frota com
 
 ---
 
+## 🏗️ Justificativa da Arquitetura
+
+O projeto segue uma arquitetura em camadas para garantir:
+
+Separação de responsabilidades:
+
+Model → Representa as entidades e regras de negócio.
+
+Business → Contém a lógica de negócio e validações.
+
+Data → Responsável pelo acesso ao banco de dados via Entity Framework Core.
+
+API → Exposição dos endpoints REST para consumo por clientes, aplicativos ou Swagger.
+
+Manutenibilidade e escalabilidade: Cada camada pode ser alterada sem impactar diretamente as outras, facilitando atualizações e expansões futuras.
+
+Facilidade de testes: A lógica de negócio está isolada da camada de apresentação, permitindo testes unitários consistentes.
+
+Integração com IoT: O sistema foi planejado para receber dados em tempo real de tags inteligentes associadas às motos, permitindo controle automatizado e rastreabilidade precisa.
+
+
+---
+
 ## 🔗 Rotas
 🔹 MotoController
 
@@ -51,6 +74,33 @@ PUT	/api/usuario/{id}	Atualiza um usuário
 
 DELETE	/api/usuario/{id}	Remove um usuário
 
+🔹 EstabelecimentoController
+
+Método Endpoint Descrição 
+GET /api/estabelecimento Lista todos os estabelecimentos 
+
+GET /api/estabelecimento/{id} Retorna um estabelecimento por ID 
+
+POST /api/estabelecimento Cria um novo estabelecimento 
+
+PUT /api/estabelecimento/{id} Atualiza um estabelecimento 
+
+DELETE /api/estabelecimento/{id} Remove um estabelecimento
+
+🔹 SetorController
+
+Método Endpoint Descrição 
+
+GET /api/setor Lista todos os setores 
+
+GET /api/setor/{id} Retorna um setor por ID 
+
+POST /api/setor Cria um novo setor 
+
+PUT /api/setor/{id} Atualiza um setor 
+
+DELETE /api/setor/{id} Remove um setor
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
@@ -62,7 +112,7 @@ DELETE	/api/usuario/{id}	Remove um usuário
 - Swagger (Swashbuckle)
 - Visual Studio 2022+
 - REST Client (ou Postman)
-
+- Dockerfile
 ---
 
 ## Como Rodar 
@@ -71,6 +121,11 @@ DELETE	/api/usuario/{id}	Remove um usuário
 2. Selecione a pasta OndeTaMoto e selecione OndeTaMoto.sln para compilar o projeto completo
 3. Ao rodar o Crud, rode com HTTPS 
 4. Ao rodar o Crud com Swagger, rode com esse link http://localhost:5294/swagger/index.html
+
+---
+## Deploy do Swagger
+
+http://191.235.235.207:5294/swagger/index.html
 
 ---
 
@@ -82,6 +137,183 @@ json
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=OndeTaMotoDb;Trusted_Connection=True;TrustServerCertificate=True"
 }
+
+---
+## Exemplos para rodar
+
+🏍️ Moto
+
+Listar todas as motos
+
+GET /api/Moto
+Accept: application/json
+
+
+Criar uma nova moto
+
+POST /api/Moto
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "mottu",
+  "tag": "alomottu2",
+  "placa": "1236784"
+}
+
+
+Obter moto por ID
+
+GET /api/Moto/1
+Accept: application/json
+
+
+Atualizar moto por ID
+
+PUT /api/Moto/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Honda atualizado",
+  "tag": "aloHonda123",
+  "placa": 1234567
+}
+
+
+Remover moto por ID
+
+DELETE /api/Moto/1
+Accept: application/json
+
+👤 Usuário
+
+Listar todos os usuários
+
+GET /api/Usuario
+Accept: application/json
+
+
+Criar um novo usuário
+
+POST /api/Usuario
+Content-Type: application/json
+
+{
+  "id": 1,
+  "email": "usuario@email.com",
+  "senha": "123456"
+}
+
+
+Obter usuário por ID
+
+GET /api/Usuario/1
+Accept: application/json
+
+
+Atualizar usuário por ID
+
+PUT /api/Usuario/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "email": "usuario@atualizado.com",
+  "senha": "novaSenha123"
+}
+
+
+Remover usuário por ID
+
+DELETE /api/Usuario/1
+Accept: application/json
+
+🏢 Setor
+
+Listar todos os setores
+
+GET /api/Setor
+Accept: application/json
+
+
+Criar um novo setor
+
+POST /api/Setor
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Setor 2",
+  "tamanho": 2000
+}
+
+
+Obter setor por ID
+
+GET /api/Setor/1
+Accept: application/json
+
+
+Atualizar setor por ID
+
+PUT /api/Setor/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Setor Atualizado",
+  "tamanho": 2500
+}
+
+
+Remover setor por ID
+
+DELETE /api/Setor/1
+Accept: application/json
+
+🏢 Estabelecimento
+
+Listar todos os estabelecimentos
+
+GET /api/Estabelecimento
+Accept: application/json
+
+
+Criar um novo estabelecimento
+
+POST /api/Estabelecimento
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Estabelecimento2",
+  "tamanho": 100
+}
+
+
+Obter estabelecimento por ID
+
+GET /api/Estabelecimento/1
+Accept: application/json
+
+
+Atualizar estabelecimento por ID
+
+PUT /api/Estabelecimento/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Estabelecimento Atualizado",
+  "tamanho": 120
+}
+
+
+Remover estabelecimento por ID
+
+DELETE /api/Estabelecimento/1
+Accept: application/json
 
 --- 
 
