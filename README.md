@@ -141,6 +141,8 @@ json
 ---
 ## Exemplos para rodar
 
+```json
+
 🏍️ Moto
 
 Listar todas as motos
@@ -315,6 +317,7 @@ Remover estabelecimento por ID
 DELETE /api/Estabelecimento/1
 Accept: application/json
 
+```
 --- 
 
 ## 🧑‍💻 Integrantes do Grupo
