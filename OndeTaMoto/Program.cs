@@ -1,6 +1,8 @@
 using OndeTaMotoBusiness;
+using OndeTaMotoData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Logging;
  
 var builder = WebApplication.CreateBuilder(args);
  
@@ -27,8 +29,8 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
  
-// A sua string de conexão deve estar no appsettings.json ou em variáveis de ambiente
-builder.Services.AddDbContext<DbContext>(options =>
+
+builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
  
 builder.Services.AddScoped<MotoService>();
@@ -38,30 +40,38 @@ builder.Services.AddScoped<SetorService>();
  
 var app = builder.Build();
  
-// --- CORREÇÃO APLICADA AQUI ---
-// Habilita o Swagger e a UI do Swagger em TODOS os ambientes.
+// Apply pending EF migrations on startup only in Development. Log and continue on error.
+if (app.Environment.IsDevelopment())
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    try
+    {
+        var db = services.GetRequiredService<AppDbContext>();
+        db.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        var loggerFactory = services.GetService<ILoggerFactory>();
+        loggerFactory?.CreateLogger("Program").LogError(ex, "Failed to apply database migrations. Check connection string and DB credentials.");
+        // Do not rethrow - allow app to start so you can inspect/log the issue.
+    }
+}
+ 
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "API OndeTáMoto v1");
-    // Garante que a UI do Swagger esteja na raiz do /swagger
     c.RoutePrefix = "swagger";
 });
  
-// O bloco 'if' agora pode ser usado para outras coisas específicas de desenvolvimento
 if (app.Environment.IsDevelopment())
 {
-    // Por exemplo, uma página de erro mais detalhada para desenvolvedores.
     app.UseDeveloperExceptionPage();
 }
  
- 
 app.UseCors("AllowAll");
- 
 app.UseHttpsRedirection();
- 
 app.UseAuthorization();
- 
 app.MapControllers();
- 
 app.Run();

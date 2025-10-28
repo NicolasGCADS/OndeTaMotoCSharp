@@ -1,4 +1,5 @@
 ﻿using OndeTaMotoModel;
+using OndeTaMotoData;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,38 +7,43 @@ namespace OndeTaMotoBusiness;
 
 public class UsuarioService
 {
-    private static readonly List<UsuarioModel> _usuarios = new();
+    private readonly AppDbContext _context;
 
-    private static int _nextId = 1;
+    public UsuarioService(AppDbContext context)
+    {
+        _context = context;
+    }
 
-    public List<UsuarioModel> ListarTodos() => _usuarios;
+    public List<UsuarioModel> ListarTodos() => _context.Usuarios.ToList();
 
-    public UsuarioModel? ObterPorId(int id) => _usuarios.FirstOrDefault(u => u.Id == id);
+    public UsuarioModel? ObterPorId(int id) => _context.Usuarios.Find(id);
 
     public UsuarioModel Criar(UsuarioModel usuario)
     {
-        usuario.Id = _nextId++;
-        _usuarios.Add(usuario);
+        _context.Usuarios.Add(usuario);
+        _context.SaveChanges();
         return usuario;
     }
 
     public bool Atualizar(UsuarioModel usuario)
     {
-        var existente = ObterPorId(usuario.Id);
+        var existente = _context.Usuarios.Find(usuario.Id);
         if (existente == null) return false;
 
         existente.Email = usuario.Email;
         existente.Senha = usuario.Senha;
 
+        _context.SaveChanges();
         return true;
     }
 
     public bool Remover(int id)
     {
-        var usuario = ObterPorId(id);
+        var usuario = _context.Usuarios.Find(id);
         if (usuario == null) return false;
 
-        _usuarios.Remove(usuario);
+        _context.Usuarios.Remove(usuario);
+        _context.SaveChanges();
         return true;
     }
 }

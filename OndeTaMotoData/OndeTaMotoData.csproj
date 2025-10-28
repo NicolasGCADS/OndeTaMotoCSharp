@@ -18,12 +18,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="9.23.80" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OndeTaMotoBusiness\OndeTaMotoBusiness.csproj" />
     <ProjectReference Include="..\OndeTaMotoModel\OndeTaMotoModel.csproj" />
-    <ProjectReference Include="..\OndeTaMoto\OndeTaMotoApi.csproj" />
   </ItemGroup>
 
 </Project>

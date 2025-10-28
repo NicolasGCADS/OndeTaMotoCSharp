@@ -1,4 +1,5 @@
 ﻿using OndeTaMotoModel;
+using OndeTaMotoData;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,39 +7,44 @@ namespace OndeTaMotoBusiness
 {
     public class SetorService
     {
-        private static readonly List<SetorModel> _setores = new();
+        private readonly AppDbContext _context;
 
-        private static int _nextId = 1;
+        public SetorService(AppDbContext context)
+        {
+            _context = context;
+        }
 
-        public List<SetorModel> ListarTodos() => _setores;
+        public List<SetorModel> ListarTodos() => _context.Setores.ToList();
 
         public SetorModel? ObterPorId(int id) =>
-            _setores.FirstOrDefault(s => s.Id == id);
+            _context.Setores.Find(id);
 
         public SetorModel Criar(SetorModel setor)
         {
-            setor.Id = _nextId++;
-            _setores.Add(setor);
+            _context.Setores.Add(setor);
+            _context.SaveChanges();
             return setor;
         }
 
         public bool Atualizar(SetorModel setor)
         {
-            var existente = ObterPorId(setor.Id);
+            var existente = _context.Setores.Find(setor.Id);
             if (existente == null) return false;
 
             existente.Nome = setor.Nome;
             existente.Tamanho = setor.Tamanho;
 
+            _context.SaveChanges();
             return true;
         }
 
         public bool Remover(int id)
         {
-            var setor = ObterPorId(id);
+            var setor = _context.Setores.Find(id);
             if (setor == null) return false;
 
-            _setores.Remove(setor);
+            _context.Setores.Remove(setor);
+            _context.SaveChanges();
             return true;
         }
     }

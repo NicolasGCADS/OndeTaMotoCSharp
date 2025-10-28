@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OndeTaMotoModel\OndeTaMotoModel.csproj" />
+    <ProjectReference Include="..\OndeTaMotoData\OndeTaMotoData.csproj" />
   </ItemGroup>
 
 </Project>
