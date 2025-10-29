@@ -53,3 +53,17 @@ C:\Users\nguin\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\refint\
 C:\Users\nguin\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.pdb
 C:\Users\nguin\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.genruntimeconfig.cache
 C:\Users\nguin\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\ref\OndeTaMotoModel.dll
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\bin\Debug\net9.0\OndeTaMotoModel.deps.json
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\bin\Debug\net9.0\OndeTaMotoModel.runtimeconfig.json
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\bin\Debug\net9.0\OndeTaMotoModel.dll
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\bin\Debug\net9.0\OndeTaMotoModel.pdb
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.AssemblyInfoInputs.cache
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.AssemblyInfo.cs
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.csproj.CoreCompileInputs.cache
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.sourcelink.json
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.dll
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\refint\OndeTaMotoModel.dll
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.pdb
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\OndeTaMotoModel.genruntimeconfig.cache
+C:\Users\labsfiap\Desktop\OndeTaMotoCSharp\OndeTaMotoModel\obj\Debug\net9.0\ref\OndeTaMotoModel.dll

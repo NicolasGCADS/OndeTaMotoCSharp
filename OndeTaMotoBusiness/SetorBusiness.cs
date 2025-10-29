@@ -32,7 +32,7 @@ namespace OndeTaMotoBusiness
             if (existente == null) return false;
 
             existente.Nome = setor.Nome;
-            existente.Tamanho = setor.Tamanho;
+            existente.Capacidade = setor.Capacidade;
 
             _context.SaveChanges();
             return true;

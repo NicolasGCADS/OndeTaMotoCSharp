@@ -74,12 +74,12 @@ namespace OndeTaMotoData.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Capacidade")
+                        .HasColumnType("NUMBER(10)");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(2000)");
-
-                    b.Property<int>("Tamanho")
-                        .HasColumnType("NUMBER(10)");
 
                     b.HasKey("Id");
 

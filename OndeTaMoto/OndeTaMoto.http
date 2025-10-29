@@ -31,7 +31,7 @@ Content-Type: application/json
   "id": 1,
   "nome": "Honda atualizado",
   "tag": "aloHonda123",
-  "placa": 1234567
+  "placa": "2345"
 }
 
 ### 🔴 DELETE - Remover moto por ID
@@ -74,3 +74,74 @@ Content-Type: application/json
 DELETE {{baseUrl}}/api/Usuario/1
 Accept: application/json
 
+
+###SETOR
+
+
+### 🟢 GET - Listar todos os setores
+GET {{baseUrl}}/api/Setor
+Accept: application/json
+
+### 🔵 POST - Criar um novo setor
+POST {{baseUrl}}/api/Setor
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Setor 2",
+  "capacidade": 2000
+}
+
+### 🟡 GET - Obter setor por ID
+GET {{baseUrl}}/api/Setor/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar setor por ID
+PUT {{baseUrl}}/api/Setor/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Setor Atualizado",
+  "capacidade": 2500
+}
+
+### 🔴 DELETE - Remover setor por ID
+DELETE {{baseUrl}}/api/Setor/1
+Accept: application/json
+
+
+###ESTABELECIMENTO
+
+
+### 🟢 GET - Listar todos os estabelecimentos
+GET {{baseUrl}}/api/Estabelecimento
+Accept: application/json
+
+### 🔵 POST - Criar um novo estabelecimento
+POST {{baseUrl}}/api/Estabelecimento
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Estabelecimento 2",
+  "tamanho": 100
+}
+
+### 🟡 GET - Obter estabelecimento por ID
+GET {{baseUrl}}/api/Estabelecimento/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar estabelecimento por ID
+PUT {{baseUrl}}/api/Estabelecimento/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Estabelecimento Atualizado",
+  "tamanho": 120
+}
+
+### 🔴 DELETE - Remover estabelecimento por ID
+DELETE {{baseUrl}}/api/Estabelecimento/1
+Accept: application/json

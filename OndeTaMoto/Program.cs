@@ -40,7 +40,7 @@ builder.Services.AddScoped<SetorService>();
  
 var app = builder.Build();
  
-// Apply pending EF migrations on startup only in Development. Log and continue on error.
+
 if (app.Environment.IsDevelopment())
 {
     using var scope = app.Services.CreateScope();
@@ -54,7 +54,7 @@ if (app.Environment.IsDevelopment())
     {
         var loggerFactory = services.GetService<ILoggerFactory>();
         loggerFactory?.CreateLogger("Program").LogError(ex, "Failed to apply database migrations. Check connection string and DB credentials.");
-        // Do not rethrow - allow app to start so you can inspect/log the issue.
+      
     }
 }
  

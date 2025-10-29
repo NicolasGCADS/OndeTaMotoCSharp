@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj": {}
+    "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj": {
+    "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj",
         "projectName": "OndeTaMotoData",
-        "projectPath": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj",
-        "packagesPath": "C:\\Users\\nguin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\obj\\",
+        "projectPath": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\OndeTaMotoData.csproj",
+        "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\labsfiap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
-                "projectPath": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj"
+              "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
+                "projectPath": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj"
               }
             }
           }
@@ -99,24 +100,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
+    "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj",
         "projectName": "OndeTaMotoModel",
-        "projectPath": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj",
-        "packagesPath": "C:\\Users\\nguin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguin\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\obj\\",
+        "projectPath": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\OndeTaMotoModel.csproj",
+        "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labsfiap\\Desktop\\OndeTaMotoCSharp\\OndeTaMotoModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\labsfiap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,6 +126,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -172,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
