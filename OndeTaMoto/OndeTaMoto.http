@@ -71,7 +71,7 @@ Content-Type: application/json
 }
 
 ### 🔴 DELETE - Remover usuário por ID
-DELETE {{baseUrl}}/api/Usuario/1
+DELETE {{baseUrl}}/api/Usuario/2
 Accept: application/json
 
 

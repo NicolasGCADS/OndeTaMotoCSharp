@@ -98,6 +98,9 @@ namespace OndeTaMotoData.Migrations
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(2000)");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("NVARCHAR2(2000)");
+
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(2000)");

@@ -1,7 +1,5 @@
 ﻿using OndeTaMotoModel;
 using OndeTaMotoData;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace OndeTaMotoBusiness
 {

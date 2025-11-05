@@ -11,8 +11,8 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace OndeTaMotoData.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251029225451_InitialCase")]
-    partial class InitialCase
+    [Migration("20251104233903_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -99,6 +99,9 @@ namespace OndeTaMotoData.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Role")
                         .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<string>("Senha")

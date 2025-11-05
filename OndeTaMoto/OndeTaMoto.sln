@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OndeTaMotoBusiness", "..\On
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OndeTaMotoData", "..\OndeTaMotoData\OndeTaMotoData.csproj", "{D4B56635-6401-4C45-BE2E-C460AFA9E4B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OndeTaMotoTests", "..\OndeTaMotoTests\OndeTaMotoTests.csproj", "{D1417CD4-1968-492D-ACC7-D2916043F099}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D4B56635-6401-4C45-BE2E-C460AFA9E4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4B56635-6401-4C45-BE2E-C460AFA9E4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4B56635-6401-4C45-BE2E-C460AFA9E4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1417CD4-1968-492D-ACC7-D2916043F099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1417CD4-1968-492D-ACC7-D2916043F099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1417CD4-1968-492D-ACC7-D2916043F099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1417CD4-1968-492D-ACC7-D2916043F099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
