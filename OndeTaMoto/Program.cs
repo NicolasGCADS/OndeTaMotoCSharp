@@ -1,5 +1,7 @@
 using OndeTaMotoBusiness;
 using OndeTaMotoData;
+using OndeTaMotoModel;
+using OndeTaMotoTrainer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Logging;
@@ -7,16 +9,23 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔐 Configurações JWT
+
+builder.WebHost.UseUrls("http://localhost:5294", "https://localhost:7164");
+
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var jwtKey = jwtSection["Key"];
 var jwtIssuer = jwtSection["Issuer"];
 var jwtAudience = jwtSection["Audience"];
-var jwtMinutes = int.TryParse(jwtSection["Minutes"], out var min) ? min : 120; // default: 2h
+var jwtMinutes = int.TryParse(jwtSection["Minutes"], out var min) ? min : 120;  
 
-// 🔒 Autenticação JWT
+
+// Health Checks
+builder.Services.AddHealthChecks();
+
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -32,7 +41,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// 🌐 CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -43,7 +51,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-// ⚙️ Controllers e Swagger
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -78,11 +85,9 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// 💾 Banco de Dados
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 🧩 Injeção de Dependências
 builder.Services.AddScoped<MotoService>();
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<EstabelecimentoService>();
@@ -90,13 +95,15 @@ builder.Services.AddScoped<SetorService>();
 
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
-// ✅ Registro do TokenService com construtor personalizado (4 parâmetros)
 builder.Services.AddScoped<ITokenService>(sp =>
-    new TokenService(jwtKey!, jwtIssuer!, jwtAudience!, 60)); // 60 minutos de expiração
+    new TokenService(jwtKey!, jwtIssuer!, jwtAudience!, 60)); 
+
+
+// Registro do ML service proveniente do projeto Trainer
+builder.Services.AddSingleton<MlService>();
 
 var app = builder.Build();
 
-// 🧱 Migrações automáticas (dev)
 if (app.Environment.IsDevelopment())
 {
     using var scope = app.Services.CreateScope();
@@ -105,16 +112,16 @@ if (app.Environment.IsDevelopment())
     {
         var db = services.GetRequiredService<AppDbContext>();
         db.Database.Migrate();
+
     }
     catch (Exception ex)
     {
         var loggerFactory = services.GetService<ILoggerFactory>();
         loggerFactory?.CreateLogger("Program")
-            .LogError(ex, "Failed to apply database migrations. Check connection string and DB credentials.");
+            .LogError(ex, "Failed to apply database migrations or seed data.");
     }
 }
 
-// 🚀 Swagger
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
@@ -127,11 +134,14 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-// 🔧 Pipeline
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+
+
+app.MapHealthChecks("/health");
+app.MapHealthChecks("/health/ready");
 
 app.MapControllers();
 app.Run();

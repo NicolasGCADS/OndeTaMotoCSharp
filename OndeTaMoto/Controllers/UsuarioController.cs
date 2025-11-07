@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace OndeTaMotoApi.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 public class UsuarioController : ControllerBase
 {
-    private readonly UsuarioService _usuarioService;
+    private readonly IUsuarioService _usuarioService;
 
-    public UsuarioController(UsuarioService usuarioService)
+    public UsuarioController(IUsuarioService usuarioService)
     {
         _usuarioService = usuarioService;
     }
