@@ -338,8 +338,7 @@ Accept: application/json
   - JWT configurado; configure seção `Jwt` em `appsettings.json`.
 
 - Testes:
-  - Ainda não existem testes xUnit completos no repositório.
-  - Para que eu implemente testes (xUnit) e endpoint ML.NET, autorize a adição de pacotes NuGet (`Microsoft.ML`, `xunit`, `Microsoft.AspNetCore.Mvc.Testing`, etc.).
+  - ML.Net está no Swagger
 
   
 
